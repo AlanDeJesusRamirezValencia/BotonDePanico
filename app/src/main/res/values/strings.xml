@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Boton De Panico 1.3.2</string>
+
+    <!--Main activity-->
+    <string name="titulo_actitityMain">Percepción de Seguridad</string>
+    <string name="uno">1</string>
+    <string name="dos">2</string>
+    <string name="tres">3</string>
+    <string name="cuatro">4</string>
+    <string name="cinco">5</string>
+    <string name="activador">Enviar</string>
+
+    <string name="valorInseguridad">Valor De Inseguridad</string>
+    <string name="nivel">Nivel</string>
+    <string name="coordenadasGeograficas">Coordenadas Geograficas</string>
+    <string name="latitud">Latitud</string>
+    <string name="longitud">Longitud</string>
+    <string name="percepcion">Percepción</string>
+    <string name="utm">UTM</string>
+    <string name="x">X</string>
+    <string name="y">Y</string>
+    <string name="zona">Zona</string>
+    <string name="hemisferio">Hemisferio</string>
+</resources>

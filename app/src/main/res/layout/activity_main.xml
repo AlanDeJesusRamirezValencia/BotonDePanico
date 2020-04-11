@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/textViewTiluloActivityMain"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="30dp"
+                android:fontFamily="@font/comfortaa"
+                android:text="@string/titulo_actitityMain"
+                android:textAlignment="center"
+                android:textSize="30sp" />
+
+            <LinearLayout
+                android:layout_width="360dp"
+                android:layout_height="120dp"
+                android:layout_marginTop="30dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/button_nivel1"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:onClick="nivel"
+                    android:text="@string/uno"
+                    android:textSize="20sp" />
+
+                <Button
+                    android:id="@+id/button_nivel2"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginStart="20dp"
+                    android:onClick="nivel"
+                    android:text="@string/dos"
+                    android:textSize="20sp" />
+
+                <Button
+                    android:id="@+id/button_nivel3"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginStart="20dp"
+                    android:onClick="nivel"
+                    android:text="@string/tres"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="240dp"
+                android:layout_height="120dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/button_nivel4"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:onClick="nivel"
+                    android:text="@string/cuatro"
+                    android:textSize="20sp" />
+
+                <Button
+                    android:id="@+id/button_nivel5"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginStart="20dp"
+                    android:onClick="nivel"
+                    android:text="@string/cinco"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/Activador"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:onClick="localizar"
+                android:text="@string/activador"
+                android:textSize="18sp" />
+
+            <TableLayout
+                android:id="@+id/TablaDeValores"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="35dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="35dp"
+                android:layout_marginBottom="30dp">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/textView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_span="2"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/comfortaa"
+                        android:gravity="center"
+                        android:text="@string/percepcion"
+                        android:textSize="18sp" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/textViewNivel"
+                        android:layout_width="match_parent"
+                        android:layout_height="36dp"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/comfortaa"
+                        android:gravity="center_vertical"
+                        android:text="@string/nivel"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/textViewNivelValor"
+                        android:layout_width="match_parent"
+                        android:layout_height="36dp"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/comfortaa"
+                        android:gravity="center_vertical"
+                        android:textAlignment="textEnd"
+                        android:textSize="18sp" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_span="2"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/comfortaa"
+                        android:gravity="center"
+                        android:text="@string/coordenadasGeograficas"
+                        android:textSize="18sp" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/textViewLongitud"
+                        android:layout_width="match_parent"
+                        android:layout_height="36dp"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/comfortaa"
+                        android:gravity="center_vertical"
+                        android:text="@string/longitud"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/textViewLongitudValor"
+                        android:layout_width="match_parent"
+                        android:layout_height="36dp"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/comfortaa"
+                        android:gravity="center_vertical"
+                        android:textAlignment="textEnd"
+                        android:textSize="18sp" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/textViewLatitud"
+                        android:layout_width="match_parent"
+                        android:layout_height="36dp"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/comfortaa"
+                        android:gravity="center_vertical"
+                        android:text="@string/latitud"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/textViewLatitudValor"
+                        android:layout_width="match_parent"
+                        android:layout_height="36dp"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/comfortaa"
+                        android:gravity="center_vertical"
+                        android:textAlignment="textEnd"
+                        android:textSize="18sp" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_span="2"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/utm"
+                        android:textSize="18sp" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/textViewX"
+                        android:layout_width="wrap_content"
+                        android:layout_height="36dp"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/comfortaa"
+                        android:gravity="center_vertical"
+                        android:text="@string/x"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/textViewXValor"
+                        android:layout_width="wrap_content"
+                        android:layout_height="36dp"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/comfortaa"
+                        android:gravity="center_vertical"
+                        android:textAlignment="textEnd"
+                        android:textSize="18sp" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/textViewY"
+                        android:layout_width="wrap_content"
+                        android:layout_height="36dp"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/comfortaa"
+                        android:gravity="center_vertical"
+                        android:text="@string/y"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/textViewYValor"
+                        android:layout_width="wrap_content"
+                        android:layout_height="36dp"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/comfortaa"
+                        android:gravity="center_vertical"
+                        android:textAlignment="textEnd"
+                        android:textSize="18sp" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/textViewZona"
+                        android:layout_width="wrap_content"
+                        android:layout_height="36dp"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/comfortaa"
+                        android:gravity="center_vertical"
+                        android:text="@string/zona"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/textViewZonaValor"
+                        android:layout_width="wrap_content"
+                        android:layout_height="36dp"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/comfortaa"
+                        android:gravity="center_vertical"
+                        android:textAlignment="textEnd"
+                        android:textSize="18sp" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/textViewHemisferio"
+                        android:layout_width="wrap_content"
+                        android:layout_height="36dp"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/comfortaa"
+                        android:gravity="center_vertical"
+                        android:text="@string/hemisferio"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/textViewHemisferioValor"
+                        android:layout_width="wrap_content"
+                        android:layout_height="36dp"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/comfortaa"
+                        android:gravity="center_vertical"
+                        android:textAlignment="textEnd"
+                        android:textSize="18sp" />
+                </TableRow>
+            </TableLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
